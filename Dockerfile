@@ -14,6 +14,5 @@ WORKDIR /usr/src/demoApp
 # Install dependencies from packages.json
 RUN yum install -y python3 python3-pip
 RUN pip3 install Django
-
-# Command for container to execute
-ENTRYPOINT [ "python3", "manage.py" ]
+RUN pwd
+RUN python3 /usr/src/demoApp/manage.py runserver
