@@ -1,6 +1,6 @@
 # Test web app that returns the name of the host/pod/container servicing req
 # Linux x64
-FROM centos:7
+FROM centos:8
 
 # Create directory in container image for app code
 RUN mkdir -p /usr/src/demoApp
