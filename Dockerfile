@@ -12,7 +12,7 @@ COPY . /usr/src/demoApp
 WORKDIR /usr/src/demoApp
 
 # Install dependencies from packages.json
-RUN yum install python3 python3-pip
+RUN yum install -y python3 python3-pip
 RUN pip3 install Django
 RUN python3 manage.py migrate
 
