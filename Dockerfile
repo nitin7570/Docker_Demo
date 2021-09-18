@@ -16,4 +16,4 @@ RUN yum install -y python3 python3-pip
 RUN pip3 install Django
 
 # Command for container to execute
-ENTRYPOINT [ "python", "manage.py" ]
+ENTRYPOINT [ "python3", "manage.py" ]
