@@ -13,7 +13,7 @@ WORKDIR /usr/src/demoApp
 
 # Install dependencies from packages.json
 RUN yum install -y python3
-RUN yum install -y Django
+RUN yum install -y django
 
 # Command for container to execute
 ENTRYPOINT [ "python", "manage.py" ]
