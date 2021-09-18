@@ -13,7 +13,6 @@ WORKDIR /usr/src/demoApp
 
 # Install dependencies from packages.json
 RUN yum install -y python3
-RUN yum install -y pip
 RUN yum install -y django
 
 # Command for container to execute
